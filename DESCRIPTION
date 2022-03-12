@@ -1,0 +1,23 @@
+Package: bcROCcurve
+Type: Package
+Title: bias-corrected methods for ROC curve and AUC under MAR assumption
+Version: 1.0
+Date: 2022-03-09
+Author: Duc-Khanh To
+Maintainer: Duc-Khanh To <duckhanh.to@unipd.it>
+Description: The R package provides utilities to estimate and make inference on 
+    the ROC curve analysis for continuous diagnostic tests in presence 
+    of vification bias. The verification mechanism is assumed as missing at 
+    random (MAR). This package consist of the methods to estimate AUC and ROC: 
+    full imputation--FI, mean score imputation--MSI, 
+    inverse probability weighting--IPW, doubly robust--DR). 
+    The asymptotic variance of the estimates also are calculated.
+License: GPL (>= 2)
+Imports: Rcpp (>= 0.12.2)
+Depends: R(>= 2.15.0), stats, utils, numDeriv
+LinkingTo: Rcpp, RcppArmadillo
+LazyLoad: yes
+LazyData: TRUE
+ByteCompile: yes
+Encoding: UTF-8
+RoxygenNote: 7.1.2
